@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from 'react-bootstrap/Navbar'
+
 class Header extends React.Component {
   render() {
     return (
-      <h1>header</h1>
+      <Navbar>
+        <h1>header</h1>
+      </Navbar>
     )
   }
 }
