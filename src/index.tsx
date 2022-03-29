@@ -6,10 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar'
 
 class Header extends React.Component {
+
   render() {
     return (
-      <Navbar>
-        <h1>header</h1>
+      <Navbar className="navbar">
+        <button id="menuButton" onClick={() => alert("You pressed the menu button")}>
+          <img src="menuIcon.svg" />
+        </button>
+        <Navbar.Brand href="https://www.marvel.com/">
+          <img
+            src="marvel.ico"
+            id="brandImage"
+          />
+
+        </Navbar.Brand>
       </Navbar>
     )
   }
