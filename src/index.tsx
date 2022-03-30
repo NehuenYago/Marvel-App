@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Header extends React.Component {
 
@@ -23,11 +26,25 @@ class Header extends React.Component {
   }
 }
 
+
+
 class CharactersGrid extends React.Component {
   render() {
     return (
-      <h1>grid</h1>
-    )
+      <Container fluid>
+        <Row>
+          <Col>
+          1
+          </Col>
+          <Col>
+          2
+          </Col>
+          <Col>3</Col>
+          <Col>4</Col>
+          <Col>5</Col>
+        </Row>
+      </Container>
+    );
   }
 }
 
