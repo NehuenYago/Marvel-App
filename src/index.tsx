@@ -13,20 +13,19 @@ class Header extends React.Component {
     return (
       <nav className="navbar">
         <button onClick={() => alert("You pressed the menu button")}>
-          <img src="menuIcon.svg" />
+          <img src="menuIcon.svg" alt="menu icon"/>
         </button>
         <a href="https://www.marvel.com/" className="navbarLink">
           <img
             src="marvelLogo.png"
             id="navbarLogoImage"
+            alt="marvel logo"
           />
         </a>
       </nav>
     )
   }
 }
-
-
 
 class CharactersGrid extends React.Component {
   render() {
@@ -60,6 +59,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('root'), //root DOM node
-  );
+  <App />,
+  document.getElementById('root'), //root DOM node
+);
