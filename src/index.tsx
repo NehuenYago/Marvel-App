@@ -3,24 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar'
 
 class Header extends React.Component {
 
   render() {
     return (
-      <Navbar className="navbar">
-        <button id="menuButton" onClick={() => alert("You pressed the menu button")}>
+      <nav className="navbar">
+        <button onClick={() => alert("You pressed the menu button")}>
           <img src="menuIcon.svg" />
         </button>
-        <Navbar.Brand href="https://www.marvel.com/">
+        <a href="https://www.marvel.com/" className="navbarLink">
           <img
-            src="marvel.ico"
-            id="brandImage"
+            src="marvelLogo.png"
+            id="navbarLogoImage"
           />
-
-        </Navbar.Brand>
-      </Navbar>
+        </a>
+      </nav>
     )
   }
 }
