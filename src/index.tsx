@@ -23,10 +23,10 @@ class Header extends React.Component {
   }
 }
 
-class Container extends React.Component {
+class CharactersGrid extends React.Component {
   render() {
     return (
-      <h1>container</h1>
+      <h1>grid</h1>
     )
   }
 }
@@ -36,7 +36,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Container />
+        <CharactersGrid />
       </div>
     );
   }
